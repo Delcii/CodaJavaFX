@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coda.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="titolo" text="coda">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+   <ListView fx:id="Lista" prefHeight="200.0" prefWidth="200.0" />
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+      <children>
+         <TextField fx:id="NomeRimuovi" promptText="Inserisci nome" />
+          <Button fx:id="Rimuovi" onAction="#RimuoviClick" text="Rimuovi">
+            <font>
+               <Font name="Comic Sans MS Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets top="10.0" />
+      </padding>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+      <children>
+         <TextField fx:id="NomeAggiungi" promptText="Inserisci nome" />
+         <Button fx:id="Aggiungi" mnemonicParsing="false" onAction="#AggiungiClick" text="Aggiungi">
+            <font>
+               <Font name="Comic Sans MS Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+      <children>
+         <Button fx:id="Servi" mnemonicParsing="false" onAction="#ServiClick" text="Servi">
+            <font>
+               <Font name="Comic Sans MS Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>
